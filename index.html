@@ -10,7 +10,8 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
   <!-- bootstrap -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js">
+  
   <title>Job portal</title>
 </head>
 <body>
@@ -39,10 +40,13 @@
             <a class="nav-link" href="Blogs">Blogs</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="SignIn">Sign In</a>
+            <a class="nav-link" href="sign-in.php">Sign_in</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="PostJob">Post Job</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Contact">Contact</a>
           </li>
         </ul>
       </div>
@@ -71,7 +75,7 @@
 
     <div class="dropdown">
       <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-        Dropdown button
+       Job Level
       </button>
       <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
         <li><a class="dropdown-item" href="#">Action</a></li>
@@ -81,7 +85,7 @@
     </div>
     <div class="dropdown">
       <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-        Dropdown button
+        Job Function
       </button>
       <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
         <li><a class="dropdown-item" href="#">Action</a></li>
@@ -91,7 +95,7 @@
     </div>
     <div class="dropdown">
       <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-        Dropdown button
+        Education
       </button>
       <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
         <li><a class="dropdown-item" href="#">Action</a></li>
@@ -101,7 +105,7 @@
     </div>
     <div class="dropdown">
       <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown"  >
-        Dropdown button
+       Employment Type
       </button>
       <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
         <li><a class="dropdown-item" >Action</a></li>
@@ -113,19 +117,22 @@
   </div>
     <!-- Categories  End-->
 
-    <div class="container-fluid  job_posts">
+    <!-- Job posts -->
+     <div class="container-fluid  job_posts">
+                        <!-- heading -->
       <div class="heading mt-5 mb-5">
         <h1 class="txt text-center"> Job Posts</h1>
-      </div>
-      <div class="row align-items-center job ms-1 me-1 mb-2" >
+      </div>            <!-- heading end -->
+
+      <div class="row align-items-center job ms-1 me-1 " >
         <div class="col-sm-1 logo">
-        <img src="images\amazon.png" width="100%">
+        <img src="images\amazon.png" width ="100%">
         </div>
         <div class="col-3 company-name">
-          <h5 class="txt">Amazon</h5>
-            Product Manager
+          <h6 class="txt">Amazon</h6>
+          Product Manager
         </div>
-        <div class=" col-6 requirement">
+        <div class="col-6 requirement">
          <b>Requirement :</b>Mern Stack,Sql,Php,Laravel
         </div>
         <div class="col-2 apply">
@@ -135,14 +142,14 @@
 
 
 
-      <div class="row align-items-center jobw ms-1 me-1 mb-2" >
+      <div class="row align-items-center jobw ms-1 me-1 " >
         <div class="col-sm-1 logo">
         <img src="images\ebay.png" width="100%">
         </div>
         <div class="col-3 company-name">
-          Ebay
-        <h5 class="txt">Buisiness Development</h5>
-                
+          
+        <h6 class="txt">Ebay</h6>
+        Buisiness Development
         </div>
         <div class=" col-6 requirement">
          <b>Requirement :</b>Mern Stack,Sql,Php,Laravel
@@ -152,15 +159,15 @@
         </div>
       </div>
 
-      <div class="row align-items-center job ms-1 me-1 mb-2" >
+      <div class="row align-items-center job ms-1 me-1 " >
         <div class="col-sm-1 logo">
-        <img src="images\amazon.png" width="100%">
+        <img src="images\tesla.png" width ="100%">
         </div>
         <div class="col-3 company-name">
-          <h5 class="txt">Amazon</h5>
-            Product Manager
+          <h6 class="txt">Tesla</h6>
+          Product Manager
         </div>
-        <div class=" col-6 requirement">
+        <div class="col-6 requirement">
          <b>Requirement :</b>Mern Stack,Sql,Php,Laravel
         </div>
         <div class="col-2 apply">
@@ -168,16 +175,14 @@
         </div>
       </div>
 
-
-
-      <div class="row align-items-center jobw ms-1 me-1 mb-2" >
+      <div class="row align-items-center jobw ms-1 me-1 " >
         <div class="col-sm-1 logo">
-        <img src="images\ebay.png" width="100%">
+        <img src="images\youtube.png" width="100%">
         </div>
         <div class="col-3 company-name">
-          Ebay
-        <h5 class="txt">Buisiness Development</h5>
-                
+          
+        <h6 class="txt">Youtube</h6>
+        Buisiness Development
         </div>
         <div class=" col-6 requirement">
          <b>Requirement :</b>Mern Stack,Sql,Php,Laravel
@@ -186,15 +191,16 @@
           <button class="button">Apply</button>
         </div>
       </div>
-      <div class="row align-items-center job ms-1 me-1 mb-2" >
+
+      <div class="row align-items-center job ms-1 me-1 " >
         <div class="col-sm-1 logo">
-        <img src="images\amazon.png" width="100%">
+        <img src="images\google.webp" width ="100%">
         </div>
         <div class="col-3 company-name">
-          <h5 class="txt">Amazon</h5>
-            Product Manager
+          <h6 class="txt">Google</h6>
+          CEO
         </div>
-        <div class=" col-6 requirement">
+        <div class="col-6 requirement">
          <b>Requirement :</b>Mern Stack,Sql,Php,Laravel
         </div>
         <div class="col-2 apply">
@@ -204,48 +210,119 @@
 
 
 
-      <div class="row align-items-center jobw ms-1 me-1 mb-2" >
-        <div class="col-sm-1 logo">
-        <img src="images\ebay.png" width="100%">
-        </div>
-        <div class="col-3 company-name">
-          Ebay
-        <h5 class="txt">Buisiness Development</h5>
-                
-        </div>
-        <div class=" col-6 requirement">
-         <b>Requirement :</b>Mern Stack,Sql,Php,Laravel
-        </div>
-        <div class="col-2 apply">
-          <button class="button">Apply</button>
-        </div>
-      </div>
-      <div class="row align-items-center job ms-1 me-1 mb-2" >
-        <div class="col-sm-1 logo">
-        <img src="images\amazon.png" width="100%">
-        </div>
-        <div class="col-3 company-name">
-          <h5 class="txt">Amazon</h5>
-            Product Manager
-        </div>
-        <div class=" col-6 requirement">
-         <b>Requirement :</b>Mern Stack,Sql,Php,Laravel
-        </div>
-        <div class="col-2 apply">
-          <button class="button">Apply</button>
-        </div>
-      </div>
-
-
-
-      <div class="row align-items-center jobw ms-1 me-1 mb-2" >
+      <div class="row align-items-center jobw ms-1 me-1 " >
         <div class="col-sm-1 logo">
         <img src="images\ebay.png" width="100%">
         </div>
         <div class="col-3 company-name">
-          Ebay
-        <h5 class="txt">Buisiness Development</h5>
-                
+          
+        <h6 class="txt">Ebay</h6>
+        Product Manager
+        </div>
+        <div class=" col-6 requirement">
+         <b>Requirement :</b>Mern Stack,Sql,Php,Laravel
+        </div>
+        <div class="col-2 apply">
+          <button class="button">Apply</button>
+        </div>
+      </div>
+
+      <div class="row align-items-center job ms-1 me-1 " >
+        <div class="col-sm-1 logo">
+        <img src="images\amazon.png" width ="100%">
+        </div>
+        <div class="col-3 company-name">
+          <h6 class="txt">Amazon</h6>
+          Business Development
+        </div>
+        <div class="col-6 requirement">
+         <b>Requirement :</b>Mern Stack,Sql,Php,Laravel
+        </div>
+        <div class="col-2 apply">
+          <button class="button">Apply</button>
+        </div>
+      </div>
+
+
+
+      <div class="row align-items-center jobw ms-1 me-1 " >
+        <div class="col-sm-1 logo">
+        <img src="images\ebay.png" width="100%">
+        </div>
+        <div class="col-3 company-name">
+          
+        <h6 class="txt">Ebay</h6>
+        Buisiness Development
+        </div>
+        <div class=" col-6 requirement">
+         <b>Requirement :</b>Mern Stack,Sql,Php,Laravel
+        </div>
+        <div class="col-2 apply">
+          <button class="button">Apply</button>
+        </div>
+      </div>
+
+      <div class="row align-items-center job ms-1 me-1 " >
+        <div class="col-sm-1 logo">
+        <img src="images\amazon.png" width ="100%">
+        </div>
+        <div class="col-3 company-name">
+          <h6 class="txt">Amazon</h6>
+          Product Manager
+        </div>
+        <div class="col-6 requirement">
+         <b>Requirement :</b>Mern Stack,Sql,Php,Laravel
+        </div>
+        <div class="col-2 apply">
+          <button class="button">Apply</button>
+        </div>
+      </div>
+
+
+
+      <div class="row align-items-center jobw ms-1 me-1 " >
+        <div class="col-sm-1 logo">
+        <img src="images\ebay.png" width="100%">
+        </div>
+        <div class="col-3 company-name">
+          
+        <h6 class="txt">Ebay</h6>
+        Buisiness Development
+        </div>
+        <div class=" col-6 requirement">
+         <b>Requirement :</b>Mern Stack,Sql,Php,Laravel
+        </div>
+        <div class="col-2 apply">
+          <button class="button">Apply</button>
+        </div>
+      </div>
+
+      <div class="row align-items-center job ms-1 me-1 " >
+        <div class="col-sm-1 logo">
+        <img src="images\amazon.png" width ="100%">
+        </div>
+        <div class="col-3 company-name">
+          <h6 class="txt">Amazon</h6>
+          Product Manager
+        </div>
+        <div class="col-6 requirement">
+         <b>Requirement :</b>Mern Stack,Sql,Php,Laravel
+        </div>
+        <div class="col-2 apply">
+          <button class="button">Apply</button>
+        </div>
+      </div>
+
+
+
+      <div class="row align-items-center jobw ms-1 me-1 " >
+        <div class="col-sm-1 logo">
+        <img src="images\ebay.png" width="100%">
+        </div>
+        <div class="col-3 company-name">
+          
+        <h6 class="txt">Ebay</h6>
+        Buisiness Development
         </div>
         <div class=" col-6 requirement">
          <b>Requirement :</b>Mern Stack,Sql,Php,Laravel
@@ -256,8 +333,252 @@
       </div>
 
     </div>
+ <!-- Job posts end-->
+
+ <!-- Companies starts -->
+<div class="heading">
+  <h1 class="txt text-center mt-5">Companies</h1>
+</div>
+
+<div class="row row-col-3 companies">
+
+  <div class="col-sm-3 ms-lg-5 ">
+    <img src="images\amazon.png" width ="60%">
+
+  </div>
+  <div class="col-sm-3 ">
+    <img src="images\ebay.png" width ="60%">
+
+  </div>
+  <div class="col-sm-3">
+    <img src="images\tesla.png" width ="60%">
+
+  </div>
+</div>
+<div class="row row-col-3">
+  <div class="col-sm-3 ms-5">
+    <img src="images\youtube.png" width ="60%">
+
+  </div>
+  <div class="col-sm-3 ">
+    <img src="images\google.webp" width ="80%">
+
+  </div>
+  
+
+</div>
+
+   <!-- Companies ends -->
+
+    <!-- Testimonial -->
+    <div class="heading mt-5 mb-5">
+      <h1 class="txt text-center">Testimonial</h1>
+    </div>
+        <div class="container-fluid " >
+        <div class="row  row-cols-md-3 g-3">
+         <div class="col mb-5">
+        <div class="card">
+        <img src="images/mr-g.jpg" height="150px"  class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Mr.Green</h5>
+          <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis eius corrupti itaque cum, deserunt quos culpa enim dicta ad iste corporis ipsum eum voluptate quia. Reiciendis blanditiis dolores consequuntur enim.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card">
+        <img src="images/mr-jkma.jpg"  height="150" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Jack Ma</h5>
+          <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab, provident, quo rerum perferendis facere culpa necessitatibus nostrum facilis accusantium nulla fugit incidunt. Deserunt, repellendus illum ipsum enim a quidem molestiae!</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="card">
+        <img src="images/j1.jpg"  height="150" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Jhon</h5>
+          <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab, provident, quo rerum perferendis facere culpa necessitatibus nostrum facilis accusantium nulla fugit incidunt. Deserunt, repellendus illum ipsum enim a quidem molestiae!</p>
+        </div>
+      </div>
+    </div>
+    
+    </div>
+  </div>
+    
+   
+  
+  
+
+ <!-- Testimonial ends -->
 
 
+  <!-- Carrier advice -->
+  <div class="heading mt-5 mb-5">
+    <h1 class="txt text-center">Carrier Advice</h1>
+  </div>
+      <div class="container-fluid " >
+      <div class="row  row-cols-md-3 g-3">
+       <div class="col mb-5">
+      <div class="card">
+      <img src="images/carrier1.jpg" height="150px"  class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Boost your carrier</h5>
+        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis eius corrupti itaque cum, deserunt quos culpa enim dicta ad iste corporis ipsum eum voluptate quia. Reiciendis blanditiis dolores consequuntur enim.</p>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card">
+      <img src="images/counselor1.jpg"  height="150" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Software Development Guideline</h5>
+        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab, provident, quo rerum perferendis facere culpa necessitatibus nostrum facilis accusantium nulla fugit incidunt. Deserunt, repellendus illum ipsum enim a quidem molestiae!</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="col">
+    <div class="card">
+      <img src="images/counselor2.jpg"  height="150" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Which way should I choose</h5>
+        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab, provident, quo rerum perferendis facere culpa necessitatibus nostrum facilis accusantium nulla fugit incidunt. Deserunt, repellendus illum ipsum enim a quidem molestiae!</p>
+      </div>
+    </div>
+  </div>
+  
+  </div>
+</div>
+  
+
+<!-- Carrier ends -->
+
+
+
+<!-- footer -->
+<div class="container-fluid my-1">
+  <!-- Footer -->
+  <footer
+  id="contact"
+          class="text-center text-lg-start text-dark"
+          style="background-color: #ECEFF1"
+          >
+    <!-- Section: Social media -->
+    <section
+             class="d-flex justify-content-between p-4 text-white"
+             style="background-color: #21D192"
+             >
+      <!-- Left -->
+      <div class="me-5">
+        <span>Get connected with us on social networks:</span>
+      </div>
+      <!-- Left -->
+
+      <!-- Right -->
+      <div>
+        <a href="https://www.facebook.com/AlAminHalalShop" class="text-white me-4">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="" class="text-white me-4">
+          <i class="fab fa-twitter"></i>
+        </a>
+        <a href="" class="text-white me-4">
+          <i class="fab fa-google"></i>
+        </a>
+        <a href="" class="text-white me-4">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="" class="text-white me-4">
+          <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="" class="text-white me-4">
+          <i class="fab fa-github"></i>
+        </a>
+      </div>
+      <!-- Right -->
+    </section>
+    <!-- Section: Social media -->
+
+    <!-- Section: Links  -->
+    <section class="">
+      <div class="container text-center text-md-start mt-5">
+        <!-- Grid row -->
+        <div class="row mt-3">
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+            <!-- Content -->
+            <h6 class="text-uppercase fw-bold">Ctg Job</h6>
+            <hr
+                class="mb-4 mt-0 d-inline-block mx-auto"
+                style="width: 60px; background-color: #7c4dff; height: 2px"
+                />
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde quasi illo pariatur, cumque voluptatibus eaque, molestias dolorem impedit libero, tenetur odit? Quas, illum, vitae reiciendis facilis eius placeat rem recusandae iure obcaecati vel nesciunt velit sequi atque deleniti? Laborum dolores excepturi blanditiis facilis animi expedita tempore incidunt laboriosam nemo neque!
+            </p>
+          </div>
+          <!-- Grid column -->
+
+          
+
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold">Useful links</h6>
+            <hr
+                class="mb-4 mt-0 d-inline-block mx-auto"
+                style="width: 60px; background-color: #7c4dff; height: 2px"
+                />
+            <p>
+              <a href="#!" class="text-dark">Your Account</a>
+            </p>
+            <p>
+              <a href="#!" class="text-dark">Post Job</a>
+            </p>
+            <p>
+              <a href="#!" class="text-dark">Interview Questions</a>
+            </p>
+            <p>
+              <a href="#!" class="text-dark">Help</a>
+            </p>
+          </div>
+          <!-- Grid column -->
+
+          <!-- Grid column -->
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold">Contact</h6>
+            <hr
+                class="mb-4 mt-0 d-inline-block mx-auto"
+                style="width: 60px; background-color: #7c4dff; height: 2px"
+                />
+            <p><i class="fas fa-home mr-3"></i> Chattogram,Bangladesh</p>
+            <p><i class="fas fa-envelope mr-3"></i> ctgjob@gmail.com</p>
+            <p><i class="fas fa-phone mr-3"></i> + 01 234 567 88</p>
+            <p><i class="fas fa-print mr-3"></i> + 01 234 567 89</p>
+          </div>
+          <!-- Grid column -->
+        </div>
+        <!-- Grid row -->
+      </div>
+    </section>
+    <!-- Section: Links  -->
+
+    <!-- Copyright -->
+    <div
+         class="text-center p-3"
+         style="background-color: rgba(0, 0, 0, 0.2)"
+         >
+      © 2023 Copyright:
+      <a class="text-dark" href="https://mdbootstrap.com/"
+         >Ctg Job</a
+        >
+    </div>
+    <!-- Copyright -->
+  </footer>
+  <!-- Footer ends-->
 
 </body>
 </html>

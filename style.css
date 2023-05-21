@@ -3,6 +3,7 @@
   /* display:inline-block; */
   padding-bottom: 15px;
 }
+
 .banner_heading{
   position: absolute;
   top:50px;
@@ -10,6 +11,7 @@
   text-decoration: double;
   color:whitesmoke;
 }
+
 .searchBar{
   margin-left: 20%;
   margin-right: 30%;
@@ -19,12 +21,12 @@
    display: inline-block;
 }
 .heading {
-  background-color: grey;
+  color:darkolivegreen;
   box-sizing: border-box;
-  height:12%;
+  height:15%;
 }
 .job{
-  height: 12%;
+  height: 15%;
   background-color: rgb(207, 207, 207);
 }
 
@@ -34,5 +36,8 @@
 }
 .job_posts{
   height:80%;
+  width:90%;
   overflow: scroll;
 }
+
+
